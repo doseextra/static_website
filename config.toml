@@ -1,0 +1,7 @@
+baseURL = "https://doseextra.com/"
+languageCode = "pt-br"
+title = "Dose Extra"
+theme = "doseextra"
+
+[params]
+remote = "https://doseextra.com"

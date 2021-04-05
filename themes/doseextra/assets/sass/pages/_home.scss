@@ -1,0 +1,72 @@
+.main-content {
+  .home-sliders {
+    bottom: 0;
+    display: flex;
+    left: 0;
+    user-select: none;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+
+    .single-slider {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      padding: 0 50px;
+      display: grid;
+      grid-template-columns: [wrapper-start](45%) [wrapper-end](55%);
+      transition: 0.3s ease-out;
+
+      .slider-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        grid-column-start: wrapper-start;
+        grid-column-end: wrapper-start;
+
+        h2 {
+          font-size: 5rem;
+          line-height: 5rem;
+          font-weight: 900;
+          margin: 0;
+        }
+
+        .slider-link {
+          margin-top: 0.5em;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          a {
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid;
+            box-shadow: inset 0 0 0 1px #ebebeb;
+            padding: 0.3em 1em;
+
+            &:hover {
+              background-color: #fff;
+              color: #eee;
+            }
+          }
+        }
+
+      }
+      lottie-player {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        object-fit: contain;
+        pointer-events: none;
+        grid-column-start: wrapper-end;
+        grid-column-end: wrapper-end;
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
 <footer>
 </footer>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+{{ $js := resources.Get "javascript/main.js" }}
+{{ $bundle := $js | js.Build }}
+<script src="{{ $bundle.RelPermalink }}"></script>
